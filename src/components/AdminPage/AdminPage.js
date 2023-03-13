@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-// Importing react components
 import Table from "../Table/Table";
 import Pagination from "../Pagination/Pagination";
 import SearchBar from "../SearchBar/SearchBar";
@@ -9,15 +8,12 @@ import DeleteButton from "../DeleteButton/DeleteButton";
 import UsersNotFound from "../UsersNotFound/UsersNotFound";
 import LoadingPage from "../LoadingPage/LoadingPage";
 
-// Importing styles
 import "./AdminPage.css";
 
 const API_URL =
   "https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json";
 
 const AdminPage = () => {
-  // Declaring states
-  //
   const [users, setUsers] = useState([]);
   const [allUsers, setAllUsers] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -39,8 +35,6 @@ const AdminPage = () => {
     fetchUsers();
   }, []);
 
-  // Pagination
-  //
   useEffect(() => {
     const indexOfLastUser = currentPage * usersPerPage;
     const indexOfFirstUser = indexOfLastUser - usersPerPage;
@@ -51,8 +45,6 @@ const AdminPage = () => {
     setCurrentUsers(userSlice);
   }, [users, currentPage]);
 
-  // Search for users
-  //
   useEffect(() => {
     const searchedUsers = allUsers.filter((user) => {
       if (user.name.toLowerCase().includes(query.toLowerCase())) {
@@ -67,29 +59,22 @@ const AdminPage = () => {
     setUsers(searchedUsers);
   }, [query, allUsers]);
 
-  // Change Page
-  //
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
 
-  // Prev Page
-  //
   const prevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
     }
   };
 
-  // Next Page
-  //
   const nextPage = (maxPageLength) => {
     if (currentPage < maxPageLength) {
       setCurrentPage(currentPage + 1);
     }
   };
 
-  // Delete User
   const deleteUser = (userId) => {
     let usersLeft = [...users];
     usersLeft = usersLeft.filter((user) => user.id !== userId);
@@ -97,16 +82,12 @@ const AdminPage = () => {
     setAllUsers(usersLeft);
   };
 
-  // Search Users
-  //
   const handleSearchUser = (event) => {
     event.preventDefault();
 
     setQuery(event.target.value);
   };
 
-  // Delete Selected Users
-  //
   const handleDeleteUsers = (event) => {
     event.preventDefault();
     let usersLeft = [...users];
