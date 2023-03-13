@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Admin UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AdminUI is a responsive and customizable admin panel built using the React library. It provides an easy-to-use interface for managing various aspects of an application or website, including user accounts, content, and settings.
 
-## Available Scripts
+## Required Features for this challenge:
+  
+  * Column titles is displayed in bold and larger font size compared to the entries to make them stand out and easily distinguishable.
+  * A search bar is placed at the top of the table that can filter any property or column in the table.
+  * Edit and delete icons is provided at the end of each row. Clicking on the edit icon will enable the user to edit the row data in place. Clicking on the delete icon will remove the row from the table.
+  * Pagination buttons is displayed at the bottom of the table. The pagination will update based on the search/filtering applied to the table. Each page will contain 10 rows, and the pagination buttons will only show the number of pages required based on the available data in the table.
+  * Users can select one or multiple rows by clicking on the checkbox provided on the left side of each row. The selected row(s) will be highlighted with a grayish background color, and users can delete the selected rows using the 'Delete Selected' button located at the bottom left corner of the table.
+  * A checkbox is placed on the top left corner of the table that will select or deselect all the displayed rows on the current page. This checkbox will not apply to all 50 rows, only the ten rows displayed on the current page.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+To install and run AdminUI locally, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+git clone https://github.com/chandramohan0/adminui.git
+```
 
-### `npm test`
+2. Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+cd adminui
+npm install
+```
 
-### `npm run build`
+3. Start the development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Testing
 
-### `npm run eject`
+AdminUI uses the Jest testing framework and React Testing Library for unit and integration testing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run the tests, use the following command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm test
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions to AdminUI are welcome! If you find a bug or have a feature request, please open an issue.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you would like to contribute code, please fork the repository and submit a pull request. Make sure to follow the contributing guidelines and the code of conduct. 
