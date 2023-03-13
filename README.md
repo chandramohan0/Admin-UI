@@ -1,6 +1,6 @@
 # Admin UI
 
-AdminUI is a responsive and customizable admin panel built using the React library. It provides an easy-to-use interface for managing various aspects of an application or website, including user accounts, content, and settings.
+AdminUI is a responsive and customizable admin panel built using the React library for admin to see and delete users. The users is provided via an API. It provides an easy-to-use interface for managing various aspects of an application or website, including various features as follows:-
 
 ## Required Features for this challenge:
   
