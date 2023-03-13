@@ -2,7 +2,7 @@
 
 AdminUI is a responsive and customizable admin panel built using the React library for admin to see and delete users. The users is provided via an API. It provides an easy-to-use interface for managing various aspects of an application or website, including various features as follows:-
 
-## Required Features for this challenge:
+## Required Features for AdminUI Challenge:
   
   * Column titles is displayed in bold and larger font size compared to the entries to make them stand out and easily distinguishable.
   * A search bar is placed at the top of the table that can filter any property or column in the table.
